@@ -36,26 +36,3 @@ class TestYandexDisk:
         assert response.status_code == status
 
 
-
-    # def teardown_method(self):
-    #     global params
-    #     response = requests.delete('https://cloud-api.yandex.net/v1/disk/resources',
-    #                             headers=self.headers,
-    #                             params=params)
-
-
-    # @pytest.mark.parametrize(
-    #     'param,value,status',
-    #     (
-    #             ['pat', 'new_folder', 400],
-    #             ['path', 'new folder', 201],
-    #             ['path', 'new folder', 409],
-    #
-    #     )
-    # )
-    # def test_create_folder(self, param, value, status):
-    #     params = {param: value}
-    #     response = requests.put('https://cloud-api.yandex.net/v1/disk/resources',
-    #                             headers=self.headers,
-    #                             params=params)
-    #     assert response.status_code == status
